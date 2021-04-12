@@ -1,3 +1,8 @@
+body, p{
+    margin: 0;
+    padding: 0;
+}
+
 body, input, button {
     font-size: 14px;
     font-family: arial,sans-serif;
@@ -11,8 +16,15 @@ nav{
     margin-left: auto;
 }
 
+nav a{
+    color: #222;
+    text-decoration: none;
+    padding: 2em;
+}
+
 nav img{
-    height: 30px;
+    height: 30px; 
+    padding: 1em;   
 }
 span {
     display: inline-block;
@@ -32,11 +44,58 @@ span {
 
 main{
     width: 50%;
-    margin: auto;
+    margin: 13em auto;
     text-align: center;
+}
+
+main img{
+    max-height: 92px;
 }
 
 input{
     width: 80%;
+    border-radius: 30px;
+    border: 1px solid gray;
+    padding: 1em;
 
+}
+.button-container{
+    margin-top: 1em;    
+}
+
+.button-container button{
+    padding: 1em;
+    border: none;
+}
+
+footer{
+    background: #F2F2F2;
+}
+
+.footer-top{
+    padding: 1em;
+}
+
+.footer-bottom{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+}
+
+.footer-bottom a{
+    color: #858585;
+    text-decoration: none;
+}
+
+.left a, .right a {
+    margin-right: 1em;
+    color: #858585;
+    text-decoration: none;
+}
+
+
+.left a:hover, .right a:hover, .footer-bottom a:hover{
+
+    text-decoration: underline;
 }
